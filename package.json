@@ -1,6 +1,6 @@
 {
     "name": "gulp-spritegenerator",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "gulp plugin for building your sprite image from your images assets",
     "main": "index.js",
     "dependencies": {
