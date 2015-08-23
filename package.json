@@ -1,16 +1,17 @@
 {
-  "name": "gulp-spritegenerator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Frulko <guillaume.dumoulin@hotmail.fr> (http://guillaume-dumoulin.fr)",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp-util": "^3.0.6",
-    "node-spritegenerator": "^1.0.7",
-    "through2": "^2.0.0"
-  }
+    "name": "gulp-spritegenerator",
+    "version": "1.0.1",
+    "description": "gulp plugin for building your sprite image from your images assets",
+    "main": "index.js",
+    "dependencies": {
+        "gulp-util": "^3.0.6",
+        "node-spritegenerator": "^1.0.7",
+        "through2": "^2.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Frulko/gulp-spritegenerator.git"
+    },
+    "author": "Frulko <guillaume.dumoulin@hotmail.fr> (http://guillaume-dumoulin.fr)",
+    "license": "MIT"
 }

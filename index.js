@@ -26,10 +26,17 @@ function endStream (cb) {
     spritegenerator.generate(opts, function (filespath) {
         for(var i in filespath) {
             var filepath = filespath[i];
+            var file_content = null;
+            try {
+                file_content = fs.readFileSync(filepath);
+            } catch (e) {
+                gutil.log('gulp-spritegenerator:', gutil.colors.red('Error to get file content'));
+                return;
+            }
             var file = new File({
               path: path.join(filepath),
-              contents: new Buffer(fs.readFileSync(filepath))
-          });
+              contents: new Buffer(file_content)
+            });
             self.push(file);
         }
         gutil.log('gulp-spritegenerator:', gutil.colors.green('Success'));
