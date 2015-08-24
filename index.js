@@ -20,7 +20,7 @@ function bufferContents (file, enc, cb) {
 
 function endStream (cb) {
     var self = this;
-    spritegenerator.on('sprite:optimizing', function (e) {
+    spritegenerator.once('sprite:optimizing', function (e) {
         gutil.log('gulp-spritegenerator:', gutil.colors.yellow('Compression - original: ' + e.original + ' - compressed: ' + e.optimized));
     });
     spritegenerator.generate(opts, function (filespath) {
