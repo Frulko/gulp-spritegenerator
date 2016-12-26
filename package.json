@@ -4,7 +4,7 @@
     "description": "gulp plugin for building your sprite image from your images assets",
     "main": "index.js",
     "dependencies": {
-        "gulp-util": "^3.0.6",
+        "gulp-util": "^3.0.8",
         "node-spritegenerator": "^1.0.7",
         "through2": "^2.0.0"
     },
