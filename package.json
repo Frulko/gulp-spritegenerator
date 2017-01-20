@@ -5,7 +5,7 @@
     "main": "index.js",
     "dependencies": {
         "gulp-util": "^3.0.6",
-        "node-spritegenerator": "^1.0.7",
+        "node-spritegenerator": "^1.0.15",
         "through2": "^2.0.0"
     },
     "repository": {
